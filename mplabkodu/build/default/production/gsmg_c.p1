@@ -680,13 +680,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;gsmg_c.c: 153:     Lcd_Set_Cursor(1,1);
 [e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
 "154
-[; ;gsmg_c.c: 154:     Lcd_Write_String("   B200101043");
+[; ;gsmg_c.c: 154:     Lcd_Write_String("   B210101373");
 [e ( _Lcd_Write_String (1 :s 1C ]
 "155
 [; ;gsmg_c.c: 155:     Lcd_Set_Cursor(2,1);
 [e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "156
-[; ;gsmg_c.c: 156:     Lcd_Write_String("MUSTAFAOGUZ ATES");
+[; ;gsmg_c.c: 156:     Lcd_Write_String("   MELIH OGDUL");
 [e ( _Lcd_Write_String (1 :s 2C ]
 "157
 [; ;gsmg_c.c: 157:     _delay((unsigned long)((3000)*(4000000/4000.0)));
@@ -723,7 +723,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;gsmg_c.c: 169:         Lcd_Set_Cursor(2,9);
 [e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 9 `i `uc ]
 "170
-[; ;gsmg_c.c: 170:         Lcd_Write_String("Sol");
+[; ;gsmg_c.c: 170:         Lcd_Write_String("SOL");
 [e ( _Lcd_Write_String (1 :s 3C ]
 "171
 [; ;gsmg_c.c: 171:     }
@@ -746,7 +746,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;gsmg_c.c: 178:         Lcd_Set_Cursor(2,9);
 [e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 9 `i `uc ]
 "179
-[; ;gsmg_c.c: 179:         Lcd_Write_String("Sag");
+[; ;gsmg_c.c: 179:         Lcd_Write_String("SAG");
 [e ( _Lcd_Write_String (1 :s 4C ]
 "181
 [; ;gsmg_c.c: 181:     }
@@ -757,10 +757,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 126 ]
 }
 "185
-[; ;gsmg_c.c: 185: int sayac_hiz = 30;
+[; ;gsmg_c.c: 185: int sayac_hiz = 45;
 [v _sayac_hiz `i ~T0 @X0 1 e ]
 [i _sayac_hiz
--> 30 `i
+-> 45 `i
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "186
@@ -837,13 +837,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;gsmg_c.c: 216:         Lcd_Set_Cursor(1,5);
 [e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 5 `i `uc ]
 "217
-[; ;gsmg_c.c: 217:         Lcd_Write_String("Hiz:");
+[; ;gsmg_c.c: 217:         Lcd_Write_String("HIZ:");
 [e ( _Lcd_Write_String (1 :s 5C ]
 "218
 [; ;gsmg_c.c: 218:         Lcd_Set_Cursor(2,5);
 [e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 5 `i `uc ]
 "219
-[; ;gsmg_c.c: 219:         Lcd_Write_String("Yon:");
+[; ;gsmg_c.c: 219:         Lcd_Write_String("YON:");
 [e ( _Lcd_Write_String (1 :s 6C ]
 "222
 [; ;gsmg_c.c: 222:         if(RB0 == 0){
@@ -974,10 +974,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 129 ]
 }
 [p f _sprintf 8421504 ]
-[a 3C 83 111 108 0 ]
-[a 4C 83 97 103 0 ]
 [a 7C 37 51 100 0 ]
-[a 2C 77 85 83 84 65 70 65 79 71 85 90 32 65 84 69 83 0 ]
-[a 5C 72 105 122 58 0 ]
-[a 6C 89 111 110 58 0 ]
-[a 1C 32 32 32 66 50 48 48 49 48 49 48 52 51 0 ]
+[a 2C 32 32 32 77 69 76 73 72 32 79 71 68 85 76 0 ]
+[a 3C 83 79 76 0 ]
+[a 4C 83 65 71 0 ]
+[a 5C 72 73 90 58 0 ]
+[a 6C 89 79 78 58 0 ]
+[a 1C 32 32 32 66 50 49 48 49 48 49 51 55 51 0 ]

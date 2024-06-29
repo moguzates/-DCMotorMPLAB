@@ -2179,9 +2179,9 @@ void duty_sol(int pwm){
 void baslangic(){
 
     Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("   B200101043");
+    Lcd_Write_String("   B210101373");
     Lcd_Set_Cursor(2,1);
-    Lcd_Write_String("MUSTAFAOGUZ ATES");
+    Lcd_Write_String("   MELIH OGDUL");
     _delay((unsigned long)((3000)*(4000000/4000.0)));
     Lcd_Clear();
 
@@ -2195,7 +2195,7 @@ void motor(int sayac, int hiz){
         duty_sol(0);
         _delay((unsigned long)((2)*(4000000/4000.0)));
         Lcd_Set_Cursor(2,9);
-        Lcd_Write_String("Sol");
+        Lcd_Write_String("SOL");
     }
 
     if (sayac == 1){
@@ -2204,13 +2204,13 @@ void motor(int sayac, int hiz){
         duty_sag(0);
         _delay((unsigned long)((2)*(4000000/4000.0)));
         Lcd_Set_Cursor(2,9);
-        Lcd_Write_String("Sag");
+        Lcd_Write_String("SAG");
 
     }
 
 }
 
-int sayac_hiz = 30;
+int sayac_hiz = 45;
 void main(){
     int sayac;
 
@@ -2242,9 +2242,9 @@ void main(){
     while(1){
 
         Lcd_Set_Cursor(1,5);
-        Lcd_Write_String("Hiz:");
+        Lcd_Write_String("HIZ:");
         Lcd_Set_Cursor(2,5);
-        Lcd_Write_String("Yon:");
+        Lcd_Write_String("YON:");
 
 
         if(RB0 == 0){

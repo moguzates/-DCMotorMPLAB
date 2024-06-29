@@ -151,9 +151,9 @@ void duty_sol(int pwm){
 void baslangic(){
     
     Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("   B200101043");
-    Lcd_Set_Cursor(2,1); //LCD BASLANGIC IMLEC
-    Lcd_Write_String("MUSTAFAOGUZ ATES");
+    Lcd_Write_String("   B210101373");
+    Lcd_Set_Cursor(2,1); 
+    Lcd_Write_String("   MELIH OGDUL");
     __delay_ms(3000);
     Lcd_Clear();
     
@@ -161,28 +161,28 @@ void baslangic(){
     
 void motor(int sayac, int hiz){
     
-    if (sayac == 0){  //SAG DONDUR
+    if (sayac == 0){  //sa? dön
         
         duty_sag(hiz);
         duty_sol(0);
         __delay_ms(2);    
         Lcd_Set_Cursor(2,9);
-        Lcd_Write_String("Sol"); 
+        Lcd_Write_String("SOL"); 
     }
     
-    if (sayac == 1){ //SOLA DONDUR
+    if (sayac == 1){ //sola dön
 
         duty_sol(hiz);
         duty_sag(0);
         __delay_ms(2);
         Lcd_Set_Cursor(2,9);
-        Lcd_Write_String("Sag");
+        Lcd_Write_String("SAG");
         
     }   
        
 }
 
-int sayac_hiz = 30;  //BASLANGIC DEGER
+int sayac_hiz = 45;  //ba?lang?ç de?eri
 void main(){
     int sayac; 
      
@@ -211,12 +211,12 @@ void main(){
     unsigned int hiz;
     __delay_ms(2);
 
-    while(1){
+    while(1){  //h?z ve yön 
 
-        Lcd_Set_Cursor(1,5);   //LCD EKRANDA HIZ VE YON
-        Lcd_Write_String("Hiz:");
+        Lcd_Set_Cursor(1,5);   
+        Lcd_Write_String("HIZ:");
         Lcd_Set_Cursor(2,5);
-        Lcd_Write_String("Yon:");
+        Lcd_Write_String("YON:");
        
         
         if(RB0 == 0){

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\gsmg_proje.X.production.hex">
+  <executable name="dist/default/production\mplabkodu.production.hex">
     <memory name="program">
       <units>words</units>
       <length>8192</length>
-      <used>1845</used>
-      <free>6347</free>
+      <used>1843</used>
+      <free>6349</free>
     </memory>
     <memory name="data">
       <units>bytes</units>

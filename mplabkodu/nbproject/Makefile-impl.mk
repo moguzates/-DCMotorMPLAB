@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=gsmg_proje.X
+PROJECTNAME=mplabkodu
 
 # Active Configuration
 DEFAULTCONF=default
